@@ -1,0 +1,50 @@
+auditoria de riesgo:
+
+
+dentro de poco para implementar, validar
+Martin:  quiere un listado con un back log
+
+Oauth2: para seguridad:
+el backup parece que ya esta resuelto.
+
+ngnix y el acceso:
+el cambio de los dockers web services a las homologadas por bayer.
+
+los ec2 son las maquinas que estan con odata + nginx. recien va a cambiarse cuando tengamos la configuracion mia.
+quiere migrar el codigo y conf. los odata en distintos dockers.
+
+AUDIRIA
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Entorno:
+
+VPC con los 3 EC2 en subredes publicas y los odata en la privada.
+
+una ec2 tien nginx como balanceador de carga y se le agrego un docker con vouch para la autenticacion con azure.
+
+NGINX-VOUCH-AZUREAD
+
+-Consultar si mis dominios son validos.
+Quien es el ballback url? es el url ec2? osea la dns publica.
+
+-Como puedo validar que en azureAD este bien configurado?
+-Tiene que crearse un usuario por aplicacion en azureAD o agregando las URI ya me basta?
+-
+
+CONSULTAS:
+#tema Certificados SSL:
+  tienen que ser si o si de bayer? amazon te da uno pero tiene que estar registrado con un dominio.
+  route 53 te lo da pero no me deja crear.
+*Esta la opcion de certificados con let's scrypt.
+
+#
+
+
+ENTORNO AWS
+...................................................
+subir todo el archivo al github de bayer.
+quiza se tenga que re ver como se presenta los datos del odata, un doble check.
+
+de lo de sergio:
+estan viendo estabilidad de modelos!!!1
