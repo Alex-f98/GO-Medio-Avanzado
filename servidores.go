@@ -1,4 +1,4 @@
-package main
+package main2
 
 import (
 	"fmt"
@@ -22,7 +22,7 @@ func main() {
 	tiempoPaso := time.Since(inicio)
 	//hasta aca tomo el tiempo que tardo en revisar cada pagina, casa uno puede responder en tiempos diferentes y en el for
 	//se queda esperando en orden hasta que responda un servidor.... esto es cortante, es decir te corta el flujo si un servidor tarda demasiado
-	
+
 	fmt.Printf("Tiempo de ejecucion: %s \n", tiempoPaso)
 }
 
